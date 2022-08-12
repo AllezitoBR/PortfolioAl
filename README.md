@@ -1,1 +1,1 @@
-<h1>Portfolio pessoal criado utilizando Html, Css, bootstrap e Javascript. Nesse projeto encontra-se informações sobre mim, minhas habilidades (soft e hard skills), meus projetos e os meios de comunicação para entrar em contato comigo.</h1>
+<h4>Portfolio pessoal criado utilizando Html, Css, bootstrap e Javascript. Nesse projeto encontra-se informações sobre mim, minhas habilidades (soft e hard skills), meus projetos e os meios de comunicação para entrar em contato comigo.</h1>
