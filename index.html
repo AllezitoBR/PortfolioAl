@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==== Style Switcher ====-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
 <body>
@@ -25,23 +32,23 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> Sobre</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Serviços</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfólio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contatos</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> Sobre</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i> Serviços</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfólio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contatos</a></li>
             </ul>
         </div>
         <!--==== Aside End====-->
         <!--==== Main Content Start====-->
         <div class="main-content">
             <!--==== Home Section Start====-->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello"> Oi, meu nome é <span class="name">Alexandre Andrade</span></h3>
-                            <h3 class="my-profession">Eu sou um<span class="typing"> Programador Web Fullstack</span>
+                            <h3 class="my-profession">Eu sou um <span class="typing"></span>
                             </h3>
                             <P> Sou formado em Ciência de dados, atualmente faço MBA em Gestão de TI, tenho experiência
                                 como
@@ -56,7 +63,7 @@
             </section>
             <!--==== Home Section End====-->
             <!--==== about Section Start====-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -68,12 +75,15 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>Eu sou Alexandre Andrade e<span> Programador Web Fullstack</span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, adipisci, qui
-                                        vel iusto porro velit consequuntur vero voluptatem, fugit officiis soluta?
-                                        Expedita amet error placeat, fuga ullam ut dolore consequuntur. Lorem ipsum
-                                        dolor sit amet, consectetur adipisicing elit. Laborum itaque in voluptatum
-                                        debitis nisi, quisquam tempore quidem? Quos laborum consectetur enim ut quas!
-                                        Veniam perspiciatis soluta vitae facilis quaerat aut?</p>
+                                    <p>Ao longo dos anos venho descobrindo novos cenários e vertentes da minha vida,
+                                        praticando o auto
+                                        conhecimento e me especializando na area de tecnologia. Atuava como Product
+                                        Manager em uma empresa de e-commerce focado no mercado de casa, decoração e life
+                                        style.
+                                        Estudo atualmente MBA em Gestão de TI pela Anhembi Morumbi e desenvolvimento
+                                        Fullstack pela Digital House, sou formando em Ciencias de Dados.
+                                        Conhecimentos em Phyton, CSS3, HTML5, Javascript, GitHub e Metodologias ageis
+                                        para gestão de processos e produtos digitais.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -246,7 +256,7 @@
         </section>
         <!--==== about Section End====-->
         <!--==== Services Section Start====-->
-        <section class="service section">
+        <section class="service section" id="service">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -303,7 +313,7 @@
         </section>
         <!--==== Services Section End====-->
         <!--==== Portfolio Section Start====-->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -375,7 +385,7 @@
         </section>
         <!--==== Portfolio Section End====-->
         <!--==== Contatos Section Start====-->
-        <section class="contact section">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -462,19 +472,26 @@
     <!--==== Style Switcher Start====-->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-skin"></i>
+            <i class="fa fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fa fa-moon-o"></i>
         </div>
         <h4>Temas</h4>
         <div class="colors">
             <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
     </div>
     <!--==== Style Switcher End====-->
     <!--==== Js Files====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 
 </html>
